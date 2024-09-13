@@ -1,0 +1,140 @@
+.catalog .container {
+  max-width: 375px;
+  min-width: 320px;
+}
+
+.text-catalog {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+
+.catalog-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.li-catalog {
+  background-color: #f3f3f3;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  padding: 23px 28px;
+}
+
+.catalog-ul .li-catalog:nth-last-child(-n + 2) {
+  display: none;
+}
+
+.catalog-foto {
+  max-width: 208px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin: 18px auto 28px;
+}
+.div-catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 44px;
+}
+.calalog-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.catalog-item-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+}
+
+.show-more-btn {
+  display: block;
+  background-color: #3350e9;
+  border: none;
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  padding: 15px 44px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  text-wrap: nowrap;
+  color: #f3f3f3;
+  margin: 0 auto;
+  margin-top: 40px;
+  transition: background-color 250ms linear;
+}
+
+.show-more-btn:hover,
+.show-more-btn:focus {
+  background-color: #1f3cd4;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog .container {
+    max-width: 768px;
+  }
+
+  .text-catalog {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+
+  .catalog-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+  }
+
+  .li-catalog {
+    width: calc((100% - 16px) / 2);
+    padding: 23px 32px;
+  }
+
+  .catalog-ul .li-catalog:nth-last-child(-n + 3) {
+    display: block;
+  }
+
+  .catalog-foto {
+    max-width: none;
+    margin: 10px auto 20px;
+  }
+
+  .calalog-item {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .show-more-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .catalog .container {
+    max-width: 1280px;
+  }
+
+  .catalog-ul {
+    gap: 32px 23px;
+  }
+
+  .li-catalog {
+    width: calc((100% - 2 * 23px) / 3);
+  }
+}

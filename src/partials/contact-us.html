@@ -1,0 +1,64 @@
+<section class="section contacts_us" id="contact_us">
+  <div class="container">
+    <h2 class="contact-us-title">Contact Us</h2>
+    <div class="contact-us-wrapper">
+      <form class="contact-us-form">
+        <p class="contact-us-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <input
+          name="user-name"
+          class="contact-form-input"
+          type="text"
+          placeholder="Name"
+          id="user-name"
+          required
+        />
+        <input
+          name="user-email"
+          class="contact-form-input"
+          type="email"
+          placeholder="E-mail"
+          id="user-email"
+          required
+        />
+        <input
+          name="user-phone"
+          class="contact-form-input"
+          type="tel"
+          placeholder="+380"
+          id="user-phone"
+          required
+        />
+        <textarea
+          name="user-comment"
+          class="contact-form-comment"
+          placeholder="Comment"
+          id="user-comment"
+        ></textarea>
+        <button type="submit" class="submit-button">Send</button>
+      </form>
+      <picture>
+        <source
+          srcset="./img/contact-us-dt.jpg 1x, ./img/contact-us-dt-2x.jpg 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="./img/contact-us-tab.jpg 1x, ./img/contact-us-tab-2x.jpg 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./img/contact-us-mob.jpg 1x, ./img/contact-us-mob-2x.jpg 2x"
+          media="(max-width:767px)"
+        />
+        <img
+          class="contact-us-img"
+          src="./img/contact-us-dt.jpg"
+          alt="wrist watch"
+          width="704"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

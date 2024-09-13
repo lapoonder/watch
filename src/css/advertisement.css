@@ -1,0 +1,122 @@
+.advertisement {
+  padding: 60px 20px 0;
+}
+
+.advertisement-container {
+  background-image: url(../img/advertisement.png),
+    linear-gradient(to bottom, #0c0c0c, #0c0c0c);
+  background-color: #0c0c0c;
+  border: 1px solid #000;
+  padding: 60px 28px;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 280px;
+}
+
+@media screen and (min-resolution:192dpi) {
+  .advertisement-container {
+    background-image: url(../img/advertisement-2x.png);
+  }
+}
+
+.advertisement-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  max-width: 279px;
+  color: #fbfbfb;
+  margin-bottom: 28px;
+}
+
+.title-part {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  color: #fbfbfb;
+  width: 160px;
+  height: 48px;
+  gap: 0px;
+  border-radius: 16px;
+  border: 1px solid #fbfbfb26;
+  color: #fbfbfb;
+  background-color: transparent;
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.advertisement-but:hover,
+.advertisement-but:focus {
+  color: #0c0c0c;
+  background-color: #fbfbfb;
+}
+
+@media screen and (min-width: 375px) {
+  .advertisement-container {
+    max-width: 335px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement-container {
+    background-image: url(../img/advertisement2.png);
+    background-size: cover;
+    max-width: 768px;
+    padding: 80px 64px;
+    height: 425px;
+  }
+
+  @media screen and (min-resolution:192dpi) {
+    .advertisement-container {
+      background-image: url(../img/advertisement2-2x.png);
+    }
+  }
+
+  .advertisement-title {
+    max-width: 576px;
+    font-size: 48px;
+    line-height: 44px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertisement-container {
+    background-image: url(../img/advertisement3.png);
+    background-size: cover;
+    height: 298px;
+    justify-content: center;
+    display: flex;
+    align-items: baseline;
+    max-width: 1150px;
+    padding: 80px;
+    gap: 140px;
+  }
+
+  @media screen and (min-resolution:192dpi) {
+    .advertisement-container {
+      background-image: url(../img/advertisement3-2x.png);
+    }
+  }
+
+  .advertisement-title {
+    max-width: 690px;
+    width: 690px;
+    height: 132px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-top: 3px;
+  }
+}

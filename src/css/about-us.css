@@ -1,0 +1,184 @@
+.container-about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 375px;
+}
+
+.about-us-container-info {
+  padding: 40px 20px;
+  background: #f3f3f3;
+  border-radius: 30px;
+}
+
+.about-us-title {
+  padding-bottom: 28px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.about-us-text {
+  margin-bottom: 20px;
+  color: rgba(12, 12, 12, 0.7);
+}
+
+.about-us-link {
+  display: block;
+  text-align: center;
+  color: #fbfbfb;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 160px;
+  background-color: #3350e9;
+  border-radius: 16px;
+  transition: background-color 250ms linear;
+}
+
+.about-us-link:hover,
+.about-us-link:focus {
+  background-color: #1f3cd4;
+  outline: transparent;
+}
+
+.about-us-container-pic {
+  background-position: center;
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(12, 12, 12, 0.2),
+      rgba(12, 12, 12, 0.2)
+    ),
+    url(../img/about-us-mob-w-watch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 446px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .about-us-container-pic {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(12, 12, 12, 0.2),
+        rgba(12, 12, 12, 0.2)
+      ),
+      url(../img/about-us-mob-w-watch-2x.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 80px;
+  }
+
+  .container {
+    min-width: 768px;
+    padding: 0 32px;
+  }
+
+  .container-about-us {
+    gap: 40px;
+  }
+
+  .about-us-container-info {
+    padding: 80px 60px;
+    background: #f3f3f3;
+    border-radius: 50px;
+  }
+
+  .about-us-title {
+    padding-bottom: 40px;
+    font-size: 48px;
+    line-height: 0.91;
+  }
+
+  .about-us-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .about-us-link {
+    margin-top: 60px;
+  }
+
+  .about-us-container-pic {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(12, 12, 12, 0.2),
+        rgba(12, 12, 12, 0.2)
+      ),
+      url(../img/about-us-tab-w-watch.jpg);
+    max-width: 100%;
+    height: 512px;
+    border-radius: 50px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .about-us-container-pic {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(12, 12, 12, 0.2),
+          rgba(12, 12, 12, 0.2)
+        ),
+        url(../img/about-us-tab-w-watch-2x.jpg);
+    }
+  }
+}
+
+/* Styles for Desktop devices */
+@media (min-width: 1280px) {
+  .section {
+    padding-top: 100px;
+  }
+
+  .container {
+    min-width: 1280px;
+    padding: 0 65px;
+  }
+
+  .container-about-us {
+    flex-direction: row;
+  }
+
+  .about-us-container-info {
+    max-width: 580px;
+  }
+
+  .about-us-link {
+    margin-top: 40px;
+  }
+
+  .about-us-container-pic {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(12, 12, 12, 0.2),
+        rgba(12, 12, 12, 0.2)
+      ),
+      url(../img/about-us-pc-w-watch.jpg);
+    width: 100%;
+    height: 532px;
+    border-radius: 50px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .about-us-container-pic {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(12, 12, 12, 0.2),
+          rgba(12, 12, 12, 0.2)
+        ),
+        url(../img/about-us-pc-w-watch-2x.jpg);
+    }
+  }
+}
